@@ -73,3 +73,19 @@ jatturong ตรวจแล้วทำได้เลย
 - **ขั้นต่อไป:** ถ้าจะรันซ้ำ ใช้ skill ใน repo ด้วย `AI_ROOT` แล้วนำผลใหม่เข้า `output/`
 
 ---
+
+## รอบ 5 · 5 พ.ย. 2569
+
+- **ทำอะไร:** รันรายงาน EKH ใหม่ด้วยสำเนา skill ใน repo บน `AI_ROOT` ชั่วคราวที่ลิงก์เฉพาะเอกสารที่บริษัทยื่น (งบ, รายงานประจำปี, MD&A, Oppday, AGM) ผลอยู่ใน `output/rerun_filings_only/`
+- **เครื่องมือ / model:** Claude Desktop (Code) · Sonnet 5.5 · `deepdive.py run`, `build_finance_sheet.py`, `check_workbook.py`, `deepdive_workbook.py`
+- **Prompt ที่ใช้:**
+
+```text
+Two things to know before rerunning : noted. proceed to run
+```
+
+- **ผลที่ได้:** ได้โมเดล Excel 10 แท็บ 3,205 สูตร ผ่าน `check_workbook.py` (RESULT: CLEAN), รายงาน md/html และ Deepdive workbook สแกนแล้วไม่มีข้อมูล Jitta, โบรกเกอร์ หรือ path ในเครื่อง มีแค่ข้อความคำเตือนมาตรฐาน ข้อจำกัด: narrative เป็นแบบอัตโนมัติ ไม่มีตารางอุตสาหกรรมและคู่แข่ง DPS ว่าง
+- **ตัดสินใจอะไร และเพราะอะไร:** ใช้ `deepdive.py run` แทนการเขียน narrative เองทั้งฉบับ เพราะเขียนให้มี source ครบทุกประโยคใช้เวลาหลายชั่วโมง และไม่ลบไฟล์เดิมใน `output/` เพราะเจ้าของโปรเจกต์ยังไม่ได้ตัดสินใจเรื่อง Jitta
+- **ขั้นต่อไป:** ถ้าผู้สอนตอบว่า Jitta ไม่ได้ ให้ลบไฟล์เดิมและใช้ชุด rerun แทน หรือเขียน narrative แบบมี source เพิ่ม
+
+---
