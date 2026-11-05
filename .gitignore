@@ -23,3 +23,11 @@ __pycache__/
 venv/
 node_modules/
 .claude/settings.local.json
+
+# EKH homework: raw/licensed data stays local (public repo)
+paper/
+set/
+fetch_thaivi/
+report/
+data/
+*.pyc

@@ -6,32 +6,20 @@
 
 ---
 
-## รอบ 1 · [วันที่ เวลา]
+## รอบ 1 · 5 พ.ย. 2569
 
-- **ทำอะไร:** [เช่น ร่าง spec.md ครั้งแรกใน Plan mode]
-- **เครื่องมือ / model:** [เช่น Claude Desktop · Opus · Plan mode]
+- **ทำอะไร:** ตั้ง repo จาก template: clone ไว้ใต้ `homework/`, เพิ่ม `.gitignore` กันข้อมูลดิบ (`paper/`, `set/`, `fetch_thaivi/`, `report/`, `data/`), กรอก README, ร่าง `spec.md` และ `help.md`
+- **เครื่องมือ / model:** Claude Desktop (Code) · Sonnet 5.5 · Plan mode ก่อนลงมือ
 - **Prompt ที่ใช้:**
 
 ```text
-[วาง prompt ที่ใช้จริงตรงนี้]
+EKH Stock analysis skill create and delight from skill หลัก คือ thai-hospital-deepdive.
+But we need to work follow this github template.
+What do you recommend how can I do step by step and later we need to upload into github
 ```
 
-- **ผลที่ได้:** [ได้อะไร ดีตรงไหน ยังขาดอะไร]
-- **ตัดสินใจอะไร และเพราะอะไร:** [เช่น ตัดหุ้นธนาคารออก เพราะเกณฑ์ payout ต่างจากบริษัททั่วไป]
-- **ขั้นต่อไป:** [รอบหน้าจะทำอะไร]
+- **ผลที่ได้:** ได้แผน 4 รอบ (setup → ย้าย skill → ผลลัพธ์ → เอกสาร) และร่าง spec ที่ตอบ 5 หัวข้อของ template ยังต้องให้เจ้าของโปรเจกต์ตรวจเป้าหมายใน spec
+- **ตัดสินใจอะไร และเพราะอะไร:** เลือกย้าย skill ทั้งชุด (ตัวเลือก B) ไม่ทำฉบับย่อ เพราะอยากให้ผลงานเป็น skill ตัวจริงที่ใช้ต่อได้ ส่วนข้อมูลดิบไม่ขึ้น repo เพราะเป็นข้อมูลลิขสิทธิ์และไฟล์ใหญ่
+- **ขั้นต่อไป:** ย้าย skill เข้า `.claude/skills/ekh-deepdive/`
 
 ---
-
-## รอบ 2 · [วันที่ เวลา]
-
-- **ทำอะไร:**
-- **เครื่องมือ / model:**
-- **Prompt ที่ใช้:**
-
-```text
-
-```
-
-- **ผลที่ได้:**
-- **ตัดสินใจอะไร และเพราะอะไร:**
-- **ขั้นต่อไป:**
