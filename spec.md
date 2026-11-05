@@ -1,7 +1,7 @@
 ---
 title: EKH Deep-Dive Skill (ผู้ช่วยวิเคราะห์หุ้นโรงพยาบาล EKH)
 owner: jatturong
-status: draft
+status: final
 updated: 2569-11-05
 ---
 
