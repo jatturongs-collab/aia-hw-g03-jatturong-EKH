@@ -1,0 +1,8 @@
+# Extra keywords for the Oppday transcript filter (scripts/quarter_docs.py) - applies to ALL stocks.
+# One term per line. Optional weight after "|": 3 = must keep (default for terms added here), 1 = normal, 0.5 = weak.
+# Company-specific terms (brand names, centre names, doctors, projects) go in <stock>/md/oppday_keywords.txt instead.
+# After editing, re-run: python3 snapshot.py data --ticker <T>   (rebuilds md/quarter/<BE>Q<q>/oppday_qa.md, no tokens)
+#
+# examples:
+# ค่าห้อง | 3
+# Medical tourism | 3
