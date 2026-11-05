@@ -29,6 +29,7 @@ updated: 2569-11-05
 | SET / ก.ล.ต. · รายงานประจำปี 56-1 One Report (tier 1) | 3, 5 |
 | บริษัท · MD&A และสไลด์ Opportunity Day (tier 1) | 1, 2, 3 |
 | Jitta factsheet 10 ปี (tier 2, ใช้เทียบอย่างเดียว) | 1, 5 |
+| บทวิเคราะห์โบรกเกอร์ที่เผยแพร่สาธารณะ (tier 2, บริบทเท่านั้น ทำเครื่องหมาย external ไม่ใช้ราคาเป้าหมาย) | 2, 3, 5 |
 
 กติกา: ทุกตัวเลขต้องมี source และวันที่ หาไม่ได้ให้เว้นว่างและบอก ห้ามเดา ตัวเลขทุกตัวคำนวณด้วยสคริปต์ ส่วน AI เขียนได้เฉพาะเหตุผล และ `check` จะปฏิเสธตัวเลขที่ไม่อยู่ใน data pack
 
@@ -36,7 +37,7 @@ updated: 2569-11-05
 
 รายงานเชิงลึก EKH 1 ฉบับ (5 phases, checklist 14 ข้อ, ช่วงมูลค่า downside/upside), snapshot รายไตรมาส และโมเดลการเงิน Excel 10 แท็บที่เป็นสูตร
 
-ไฟล์ที่ต้องได้: `output/EKH_deepdive_v1.md` · `output/EKH_deepdive_v1.html` · `output/EKH_Snapshot_Report_Q2_2569-v2.md/.html` · `output/EKH_finance_model_v4.xlsx` · skill ที่ `.claude/skills/ekh-deepdive/`
+ไฟล์ที่ต้องได้: `output/EKH_DeepDive_Report_2569-v4.md/.html` · `output/EKH_Deepdive_2569_v3.xlsx` · `output/EKH_finance_model_v2.xlsx` · `output/EKH_Snapshot_Report_Q2_2569-v2.md/.html` · skill ที่ `.claude/skills/ekh-deepdive/`
 
 ## 5. Success criteria · รู้ได้อย่างไรว่างานผ่าน
 
@@ -44,4 +45,4 @@ updated: 2569-11-05
 - [ ] ทุกตัวเลขในรายงานกดย้อนไปถึงไฟล์และหน้าต้นทางได้
 - [ ] `deepdive.py check` ลงท้ายด้วย `RESULT: CLEAN`
 - [ ] ข้อที่เป็นของเจ้าของ (owner items) ไม่ถูก AI ตอบแทน
-- [ ] repo ไม่มี key, ข้อมูลพอร์ตจริง หรือบทวิเคราะห์โบรกเกอร์
+- [ ] repo ไม่มี key, ข้อมูลพอร์ตจริง หรือไฟล์ดิบของโบรกเกอร์ (รายงานอ้างบทวิเคราะห์โบรกเกอร์เป็นบริบท external เท่านั้น ไม่ใช้ราคาเป้าหมาย)

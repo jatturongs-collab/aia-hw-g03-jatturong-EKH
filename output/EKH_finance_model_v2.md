@@ -1,9 +1,9 @@
 # บริษัท เอกชัยการแพทย์ จำกัด (มหาชน) (EKH) — Master Financial Model & Executive Summary
 **Ekachai Medical Care Public Company Limited | SET: EKH | กลุ่ม: Category 3: Thai Cash & Private Insurance (Non-SSO)**
 
-* ไฟล์ Excel คู่กัน: `EKH_finance_model_v1.xlsx` (10 ชีต, สูตรคำนวณสด)
+* ไฟล์ Excel คู่กัน: `EKH_finance_model_v2.xlsx` (10 ชีต, สูตรคำนวณสด)
 * ช่วงข้อมูล: รายไตรมาส Q1/2566–Q2/2569 | รายปี ปี 2563–6M/2569 + งวดสะสมล่าสุด
-* จัดทำ: 2026-11-05 16:08 | หน่วย: ล้านบาท ยกเว้นที่ระบุ
+* จัดทำ: 2026-11-05 16:25 | หน่วย: ล้านบาท ยกเว้นที่ระบุ
 
 ---
 

@@ -89,3 +89,22 @@ Two things to know before rerunning : noted. proceed to run
 - **ขั้นต่อไป:** ถ้าผู้สอนตอบว่า Jitta ไม่ได้ ให้ลบไฟล์เดิมและใช้ชุด rerun แทน หรือเขียน narrative แบบมี source เพิ่ม
 
 ---
+
+## รอบ 6 · 5 พ.ย. 2569
+
+- **ทำอะไร:** เขียน narrative ของ EKH ที่อ่านบทวิเคราะห์โบรกเกอร์และเอกสารบริษัท ผ่าน `deepdive.py check` แล้ว render รายงาน v4 กับ workbook v3 จากนั้นแทนที่รายงานเก่าใน `output/` ด้วยชุดล่าสุด และอัปเดต spec, help, PROJECT_MEMORY
+- **เครื่องมือ / model:** Claude Desktop (Code) · Sonnet 5.5 · `deepdive.py check/render`, `deepdive_workbook.py`, `check_workbook.py`
+- **Prompt ที่ใช้:**
+
+```text
+I can see jitta and paper here is jitta, C:\ai\Thstock\EKH\factsheet
+broker papers , you can use C:\ai\Thstock\EKH\paper , I would prefer the useful report and those are public paper ..
+Write narrative
+after complete report , would you like to update github again all those .md file . anyway I like you to upload the latest report and remove the old output report
+```
+
+- **ผลที่ได้:** narrative ผ่านการตรวจ (CLEAN) หลังแก้ 2 ครั้ง: ปีที่ไม่อยู่ใน data pack ต้องมี src และแหล่งภาคอุตสาหกรรมต้องทำเครื่องหมาย external รายงาน v4 ยาว 97 KB (เดิม 51 KB) ได้ข้อค้นพบหลัก เช่น ผู้ป่วยในของโรงพยาบาลแม่ลดจาก 76.05% เป็น 58.05% (ปี 2566-2568) และการเติบโตปี 2569 มาจากบริษัทย่อย แต่กล่องตรวจสอบของรายงานยังมี 1 ข้อไม่ผ่าน (โครงสร้างรายได้ MD&A) และยังไม่มีตารางเทียบคู่แข่ง
+- **ตัดสินใจอะไร และเพราะอะไร:** เจ้าของโปรเจกต์สั่งให้ขึ้น repo ทั้งที่รายงานมีตัวเลขจาก Jitta และการอ้างโบรกเกอร์ เพราะต้องการรายงานที่มีประโยชน์ และถือว่าบทวิเคราะห์เป็นเอกสารสาธารณะ ไม่ใส่ PDF หรือ factsheet ดิบ และถามผู้สอนใน `help.md` ข้อ 1 ส่วนไฟล์เก่า (deepdive v1, finance model v4, ชุด filings-only) ถูกลบเพราะถูกแทนที่ด้วยชุดใหม่ แต่คงสแนปช็อต Q2 ไว้เพราะเป็นรายงานคนละชนิด
+- **ขั้นต่อไป:** รอคำตอบผู้สอนเรื่อง Jitta/โบรกเกอร์ แก้ตัวดึงข้อมูล MD&A และใส่ one-off ปี 2565 ในไฟล์สมมติฐาน แล้วรันรายงานใหม่
+
+---
